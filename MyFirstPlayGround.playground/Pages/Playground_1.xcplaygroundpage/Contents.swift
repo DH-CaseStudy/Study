@@ -2,7 +2,7 @@
 
 import Foundation
 
-var greeting = "Hello, playground"
+var greeting = "Hello, playground1"
 
 let dh = 10
 
