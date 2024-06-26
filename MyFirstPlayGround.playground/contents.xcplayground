@@ -3,5 +3,8 @@
     <pages>
         <page name='Playground_1'/>
         <page name='Playground_2'/>
+        <page name='LiveView'/>
+        <page name='nill병합연산자'/>
+        <page name='ControlFlow'/>
     </pages>
 </playground>
