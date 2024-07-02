@@ -33,7 +33,68 @@ func greet(person: String?){
 
 greet(person:nil)
 greet(person:"donghwi")
+
+// switch
+let number = 7
+
+switch number { //break 없이도 해당 조건이 만족하면 빠져나감.
+case 0:
+    print("zero")
+    fallthrough //조건이 만족한다면 하위 케이스문 모두 실행.
+case 1,2,3:
+    print("small number")
+    fallthrough
+case 4...7:
+    print("midium number")
+    fallthrough
+default:
+    break
+    //print("negative number")
+    
+}
+
 // 2. looping control flow
+
+// for - in
+for i in 1...5 {
+    print(i)
+}
+
+for _ in 1...5 {
+    print("number is good")
+}
+
+let number2 = [1,2,3,4,5]
+for num in number2 {
+    print(num)
+}
+
+let person :[String : Any] = ["name":"john", "city":"seoul", "age":30] //타입 어노테이션 중에서 key, value를 string, any로 지정할 수 있다
+
+for (key, value) in person{
+    print("\(key) : \(value)")
+}
+
+// while, repeat-while 최소 1회가 실행되는지의 차이
+var count = 0
+while count < 5 {
+    print("count", count)
+    count += 1
+}
+
+var number3 = 5
+repeat {
+    print("number3",number3)
+    number3 += 1
+} while number3 < 5
+
+//continue
+for number in 1...10{
+    if number % 2 == 0 {
+        continue //다시 조건문으로 돌아간다.
+    }
+    print(number)
+}
 // 3.
 
 //: [Next](@next)
