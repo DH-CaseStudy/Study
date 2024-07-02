@@ -5,5 +5,8 @@
         <page name='Playground_2'/>
         <page name='LiveView'/>
         <page name='DataType'/>
+        <page name='ControlFlow'/>
+        <page name='Function'/>
+        <page name='nill병합연산자'/>
     </pages>
 </playground>
