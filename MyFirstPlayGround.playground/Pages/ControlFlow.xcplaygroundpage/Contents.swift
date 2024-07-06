@@ -35,7 +35,7 @@ greet(person:nil)
 greet(person:"donghwi")
 
 // switch
-let number = 7
+let number = 3
 
 switch number { //break 없이도 해당 조건이 만족하면 빠져나감.
 case 0:
@@ -43,14 +43,14 @@ case 0:
     fallthrough //조건이 만족한다면 하위 케이스문 모두 실행.
 case 1,2,3:
     print("small number")
-    fallthrough
+    //fallthrough
 case 4...7:
     print("midium number")
     fallthrough
 default:
+    print("default")
     break
     //print("negative number")
-    
 }
 
 // 2. looping control flow
@@ -95,6 +95,10 @@ for number in 1...10{
     }
     print(number)
 }
-// 3.
 
-//: [Next](@next)
+for test in 1...5 {
+    if test % 2 == 0 { // 조건을 만족하면 for in 문으로 
+        continue
+    }
+    print("test", test)
+}
