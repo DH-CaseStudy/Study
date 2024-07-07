@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' display-mode='raw' buildActiveScheme='true' importAppTypes='true'>
     <pages>
-        <page name='Playground_1'/>
-        <page name='Playground_2'/>
         <page name='LiveView'/>
         <page name='DataType'/>
         <page name='ControlFlow'/>
         <page name='Function'/>
         <page name='nill병합연산자'/>
+        <page name='Class'/>
     </pages>
 </playground>

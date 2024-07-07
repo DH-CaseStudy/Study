@@ -106,8 +106,41 @@ func calculateSum(_ a: Int, _ b: Int) -> Int {
     return a + b
 }
 
-let sum = calculateSum
+let sum = (calculateSum)
 
 print(sum(10,20))
 
+func performOperation(_ operation: (Int, Int) -> Int , _ a: Int, _ b: Int) -> Int {
+    return operation(a,b)
+}
+
+func add2(_ a: Int, _ b: Int) -> Int{a+b}
+func multiple(_ a: Int, _ b: Int) -> Int{a*b}
+
+let result2 = performOperation(multiple, 10, 20)
+let result3 = performOperation(add2, 10, 20)
+print(result2)
+print(result3)
+
+// 8. 클로져 
+ //- 함수나 클로져 표현식 코드블럭과 주변의 하나이상의 변수와 결합된 형태
+ // - 캐시 메모리 구현
+ // 익명 이름 없는 함수
+
+let multiple = { (number: Int) -> Int in
+        return number * number
+}
+
+multiple(10)
+
+
+let numbers: [Int] = [1,2,3,4,5]
+
+//let squarenumbers = numbers.map({(number: Int) -> Int in
+//    return number * number
+//})
+
+let squarenumbers = numbers.map{ $0 * $0 }
+
+print(squarenumbers)
 //: [Next](@next)
